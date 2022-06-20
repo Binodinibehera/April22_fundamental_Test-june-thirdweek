@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1 id="title">javascript</h1>
+    <h2 id="subject">Arrays:printing as HTML List using FOR Loop</h2>
+    <h2 id="output"></h2>
+    <script>
+        var cities = ['Delhi', 'Mumbai', 'Jaipur', 'Kolkata', 'Indore'];
+        var display = "<ol>"; //Initialize with opening <OL> tag an ordered list
+        for (var i = 0; i < cities.length; i++); {
+            display += "<li>" + cities[0] + "</li>";
+            display += "<li>" + cities[1] + "</li>";
+            display += "<li>" + cities[2] + "</li>";
+            display += "<li>" + cities[3] + "</li>";
+            display += "<li>" + cities[4] + "</li>";
+        }
+        display += "</ol>";
+        document.getElementById("output").innerHTML = display;
+    </script>
+</body>
+
+</html>
